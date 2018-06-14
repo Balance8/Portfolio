@@ -1,0 +1,46 @@
+body{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+#Input{
+    padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color:white;
+  border: solid black;
+  border-radius: 15px;
+}
+#plus,#minus{
+    padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #B0396C;
+  border: solid black;
+  border-radius: 15px;
+}
+#final{
+    padding: 15px 25px;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+
+
+#plus:hover{
+color: #B0396C;
+background-color: black;
+}
+#minus:hover{
+color: #B0396C;
+background-color: black;
+}
