@@ -1,0 +1,15 @@
+User.destroy_all
+
+User.create(username: 'BaIance', fname: 'Michael', lname: 'Slocum', rank: 'Diamond 2', email: 'asd1@gmail.com', password: 'asd')
+User.create(username: 'Husscat', fname: 'Megan', lname: 'Barnes', rank: 'Gold 1', email: 'asd2@gmail.com', password: 'asd')
+User.create(username: 'WahDonka', fname: 'Brad', lname: 'Ez', rank: 'Diamond 2', email: 'asd3@gmail.com', password: 'asd')
+User.create(username: 'New Begin', fname: 'Greg', lname: 'Gross', rank: 'Diamond 2', email: 'asd4@gmail.com', password: 'asd')
+User.create(username: 'Begin New', fname: 'Ian', lname: 'Kingsbury', rank: 'Diamond 2', email: 'asd4@gmail.com', password: 'asd')
+User.create(username: 'Icehazerd', fname: 'Randy', lname: 'Slocum', rank: 'Diamond 2', email: 'asd4@gmail.com', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd4@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd5@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd6@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd7@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd8@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd9@gmail', password: 'asd')
+User.create(username: 'Hushcat', fname: 'Mike', lname: 'Slocum', rank: 'Diamond 2', email: 'asd10@gmail', password: 'asd')

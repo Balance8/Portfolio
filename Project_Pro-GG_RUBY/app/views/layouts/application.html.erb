@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRO.GG</title>
+    <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+                <meta charset="utf-8">
+
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Bootstrap core CSS -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+                <!-- Material Design Bootstrap -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+                <!-- JQuery -->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <!-- Bootstrap tooltips -->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+                <!-- Bootstrap core JavaScript -->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <!-- MDB core JavaScript -->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">PRO.GG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="form-inline mx-auto d-flex justify-content-center ">
+                <input class="form-control text-center mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn bg-primary my-2 my-sm-0 d-none d-lg-block" type="submit">Search</button>
+            </div>
+
+            <ul class="navbar-nav ">
+                <li class="text-white dropdown text-center" id="dropdownmobile">
+                    <% if current_user %>
+                        Welcome,
+                        <%= link_to current_user.fname.capitalize, profile_path, class:"text-white" %>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a class="dropdown-toggle fixed-center text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Profile
+                            </a>
+                            <div class="dropdown-menu"style="margin-left:72px;" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/profile">View Profile</a>
+                                <a class="dropdown-item" href="/profile/edit">Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <%=link_to 'Delete Account', user_path("dummy"), method: :delete %>
+                            </div>
+                            <%= link_to 'Log Out', session_path('dummy'), method: :delete, class: "btn btn-sm bg-primary" %>
+                                <% else %>
+                                    <%= link_to 'Log In', login_path, class: "btn btn-sm bg-primary" %>
+                                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <%= link_to 'Register', new_user_path, class: "btn btn-sm bg-primary" %>
+                                            <% end %>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <%= yield %>
+
+</body>
+
+</html>
