@@ -2,9 +2,9 @@
 My ongoing portfolio showcasing my Programming Projects and Programming Practices
 
 
-# GA Tests_PracticeApps_CodeChallenges
+# GA Assessments_PracticeApps_CodeChallenges
 
-- Assessments: SAT Scores + Summary Statistics
+- Assessments: Units 1 - 4  
 - CodeChallenges: Billboard Hits + Data Munging
 - PracticeApps: Liquor Sales + Linear Regression
 
