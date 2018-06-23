@@ -1,5 +1,5 @@
 function leftShift(binary, n) {
-  return binary << n
+  return binary << n;
 }
 
 leftShift(0b101, 2); //=> 20

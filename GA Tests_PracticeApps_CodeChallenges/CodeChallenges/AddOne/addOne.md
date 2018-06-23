@@ -8,7 +8,8 @@ Write a function called addOne that takes a single number as input and returns o
 
 Examples
 
-``` 
+```
 addOne(1) //=> 2
-addOne(-5) //=> -4 
-addOne() //=> "A valid number must be provided!" 
+addOne(-5) //=> -4
+addOne() //=> "A valid number must be provided!"
+```

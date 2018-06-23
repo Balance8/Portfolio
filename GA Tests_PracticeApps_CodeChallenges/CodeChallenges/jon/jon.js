@@ -1,3 +1,3 @@
-function jon(){
-  return "I like coconuts!"
+function jon() {
+  return "I like coconuts!";
 }

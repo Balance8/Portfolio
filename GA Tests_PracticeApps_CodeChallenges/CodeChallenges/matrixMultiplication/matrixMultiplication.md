@@ -10,16 +10,18 @@ A matrix is represented by a multi-dimensional array. A square matrix is an arra
 
 For example below is a square matrix:
 
-[                             
-    [1, 2],                
-    [3, 5] 
-]                       
+[  
+ [1, 2],  
+ [3, 5]
+]
 
-To multiply a constant number times a matrix simply multiply the constant to each element in the matrix. See this tutorial for a more in-depth explanation: 
+To multiply a constant number times a matrix simply multiply the constant to each element in the matrix. See this tutorial for a more in-depth explanation:
 
 http://www.purplemath.com/modules/mtrxmult.htm
 
 Example
+
 ```
 matrixMultiplication( 2, [ [4,2], [1,3] ] ) //=> [ [8,4], [2,6] ]
 matrixMultiplication( 3, [ [5] ] ) //=> [ [15] ]
+```

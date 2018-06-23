@@ -9,7 +9,9 @@ Write a function called longestPalindrome that takes in a string of lowercase le
 Given a string, longestPalindrome should return the longest substring of letters that is a palindrome.
 
 Examples
+
 ```
 longestPalindrome("abcbd") //=> "bcb"
 longestPalindrome("abba") //=> "abba"
 longestPalindrome("abcbdeffe") //=> "effe"
+```

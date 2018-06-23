@@ -8,7 +8,8 @@ Write a function getProductsOfAllIntsExceptAtIndex that takes an array of intege
 
 Examples
 
-``` 
+```
 getProductsOfAllIntsExceptAtIndex([1,2,3]) //=> [ 2*3, 1*3, 2*1 ] which simplifies to [6, 3, 2]
-getProductsOfAllIntsExceptAtIndex([1,7,3,4]) //=> [ 7*3*4, 1*3*4, 1*7*4, 1*7*3 ] which simplifies to [84, 12, 28, 21] 
-getProductsOfAllIntsExceptAtIndex([0,5,2]) //=> [ 5*2, 0*2, 0*5 ] which simplifies to [ 10, 0, 0] 
+getProductsOfAllIntsExceptAtIndex([1,7,3,4]) //=> [ 7*3*4, 1*3*4, 1*7*4, 1*7*3 ] which simplifies to [84, 12, 28, 21]
+getProductsOfAllIntsExceptAtIndex([0,5,2]) //=> [ 5*2, 0*2, 0*5 ] which simplifies to [ 10, 0, 0]
+```
