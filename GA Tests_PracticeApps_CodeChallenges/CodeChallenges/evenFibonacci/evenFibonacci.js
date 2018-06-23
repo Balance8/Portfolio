@@ -1,10 +1,17 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
+let a = 1;
+let b = 2;
+let sum = 0;
+
+function evenFibonacci() {
+  while (a < 4000000) {
+    if (a % 2 === 0) {
+      sum += a;
     }
-    i === s.length - 1 ? "" : totalArr.push("-");
-  });
-  return totalArr.join("");
+    var c = a + b;
+    a = b;
+    b = c;
+  }
+  return sum;
 }
+
+evenFibonacci();

@@ -8,4 +8,5 @@ Write a function called jon that returns the string "I like coconuts!". This fun
 
 Examples
 
-``` jon() //=> I like coconuts!  ```
+``` 
+jon() //=> I like coconuts!

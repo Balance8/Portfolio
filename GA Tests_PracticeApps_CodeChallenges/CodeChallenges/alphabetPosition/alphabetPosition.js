@@ -1,8 +1,8 @@
 let abc = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split(" ");
 function alphabetPosition(text) {
-    console.log(abc[0]);
+  console.log(abc[0]);
 
-  abc.findIndex((e,i)=> text.split(""))  
+  abc.findIndex((e, i) => text.split(""));
   text.split("").map((e, i) => abc.findIndex(i => e === abc[10]));
   return text;
 }

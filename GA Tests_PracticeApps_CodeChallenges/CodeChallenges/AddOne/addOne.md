@@ -1,11 +1,14 @@
-jon
+addOne
 
 Difficulty: Basic
 
 Prompt
 
-Write a function called jon that returns the string "I like coconuts!". This function should accept no parameters.
+Write a function called addOne that takes a single number as input and returns one plus that number. When no number is provided please return the string "A valid number must be provided!".
 
 Examples
 
-``` jon() //=> I like coconuts!  ```
+``` 
+addOne(1) //=> 2
+addOne(-5) //=> -4 
+addOne() //=> "A valid number must be provided!" 

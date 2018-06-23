@@ -1,10 +1,28 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
+function bubbleSort(items) {
+  var length = items.length;
+  for (var i = length - 1; i >= 0; i--) {
+    console.log(
+      i +
+        `
+------------ i`
+    );
+    for (var j = length - i; j > 0; j--) {
+      console.log(
+        j +
+          `
+------------ j`
+      );
+      if (items[j] < items[j - 1]) {
+        var tmp = items[j];
+        items[j] = items[j - 1];
+        items[j - 1] = tmp;
+      }
+      console.log(
+        j +
+          `
+------------ j2`
+      );
     }
-    i === s.length - 1 ? "" : totalArr.push("-");
-  });
-  return totalArr.join("");
+  }
+  return items;
 }

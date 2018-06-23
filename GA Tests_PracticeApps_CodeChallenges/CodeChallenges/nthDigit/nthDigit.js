@@ -1,10 +1,17 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
-    }
-    i === s.length - 1 ? "" : totalArr.push("-");
-  });
-  return totalArr.join("");
+function nthDigit(x, n) {
+  let str = x.toString();
+  let arr = [];
+
+  for (var i = str.length - 1; i >= 0; i--) {
+    arr.push(str.charAt(i));
+  }
+
+  console.log(arr);
+
+  return parseInt(arr[n]);
 }
+
+console.log(nthDigit(123, 0)); //=> 3
+// nthDigit(123, 1) //=> 2
+// nthDigit(123, 2) //=> 1
+// nthDigit(234642, 4) //=> 3

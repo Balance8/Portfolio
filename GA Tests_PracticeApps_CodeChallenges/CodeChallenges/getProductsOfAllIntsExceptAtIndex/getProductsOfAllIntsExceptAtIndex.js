@@ -1,10 +1,19 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
+function getProductsOfAllIntsExceptAtIndex(values) {
+  var result = [];
+
+  for (var i = 0; i < values.length; i++) {
+    var product = 1;
+    console.log(i + " i");
+
+    for (var j = 0; j < values.length; j++) {
+      console.log(j + " j");
+      if (j != i) {
+        product *= values[j];
+      }
     }
-    i === s.length - 1 ? "" : totalArr.push("-");
-  });
-  return totalArr.join("");
+    // console.log(product)
+    result.push(product);
+  }
+
+  return result;
 }

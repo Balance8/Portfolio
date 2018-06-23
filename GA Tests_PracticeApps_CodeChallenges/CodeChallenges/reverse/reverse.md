@@ -1,11 +1,14 @@
-jon
+reverse
 
-Difficulty: Basic
+Difficulty: basic
 
 Prompt
 
-Write a function called jon that returns the string "I like coconuts!". This function should accept no parameters.
+Write a function called reverse that accepts a list of integers as an input and returns the integers in reverse order.
 
 Examples
 
-``` jon() //=> I like coconuts!  ```
+
+``` 
+reverse([1,2,3,4,5]) //=> [5,4,3,2,1]
+reverse([99, 3, 45]) //=> [45, 3, 99]

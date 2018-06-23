@@ -1,10 +1,8 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
-    }
-    i === s.length - 1 ? "" : totalArr.push("-");
-  });
-  return totalArr.join("");
+function convertToF(c) {
+  return c * 1.8 + 32;
 }
+
+convertToF(0); //=> 32
+convertToF(-10); //=> 14
+convertToF(10); //=> 50
+convertToF(20); //=> 68
