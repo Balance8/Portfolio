@@ -2,7 +2,7 @@ function fromPairs(arr) {
   let arrNew = [];
   console.log(arr[0][0]);
   for (i = 0; i < arr.length; i++) {
-    if ()
+    //if ()
       arrNew.push(arr[i][arr.length - arr.length]);
     arrNew.push(arr[i][arr.length - (arr.length - 1)]);
   }
