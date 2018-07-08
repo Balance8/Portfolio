@@ -1,10 +1,13 @@
-function accum(s) {
-  totalArr = [];
-  s.split("").forEach((e, i) => {
-    for (let j = 0; j <= i; j++) {
-      j === 0 ? totalArr.push(e.toUpperCase()) : totalArr.push(e.toLowerCase());
-    }
-    i === s.length - 1 ? "" : totalArr.push("-");
+function balancedBraces(str) {
+  stack = [];
+  str.split("").forEach(x => {
+    x === "{" || x === "[" || x === "(" ? stack.push(x) : x === "}" || x === "]" || x === ")" ? stack.pop(x) : "";
+
   });
-  return totalArr.join("");
+  console.log(stack);
+  return stack.length === 0;
 }
+
+console.log(balancedBraces("{xx[x()x]xx}"));
+
+console.log(balancedBraces("{xx[x)x]xx}"));
