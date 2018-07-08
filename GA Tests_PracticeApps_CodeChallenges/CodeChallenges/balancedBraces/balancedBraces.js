@@ -1,27 +1,22 @@
 function balancedBraces(str) {
   let stack = [];
   let map = { "}": "{", ")": "(", "]": "[" };
+  let bValue = "";
+  console.log(map["("]);
 
-  
-
-  for (let index = 0; index < str.length; index++) {
-    let curr = str[index];
-
-    if (["(", "{", "["].includes(curr)) {
-      stack.push(curr);
-    } else {
-      let top = stack.pop();
-      if (top !== map[curr]) {
-        return false;
-      }
-    }
-  }
-  return true;
+  str.split("").forEach(x => {
+    ["(", "{", "["].includes(x)
+      ? stack.push(x)
+      : stack.pop() === map[x]
+        ? (bValue = true)
+        : (bValue = false);
+  });
+  return bValue;
 }
 
-console.log(balancedBraces("{xx[x()x]xxx}"));
+console.log(balancedBraces("{[()]}"));
 
-console.log(balancedBraces("{xx[{((((x]xx}"));
+console.log(balancedBraces("{x[{((((]}"));
 
 console.log(
   balancedBraces("(){}[]"), // => true
