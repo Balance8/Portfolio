@@ -1,20 +1,28 @@
 function balancedBraces(str) {
   let stack = [];
   let map = { "}": "{", ")": "(", "]": "[" };
-  let bValue = "";
-  console.log(map["("]);
+  let bValue;
+
+  // console.log(Object.keys(map));
+  // console.log(Object.values(map));
+  // console.log(JSON.parse(JSON.stringify(map["}"])));
 
   str.split("").forEach(x => {
+    // console.log(x);
+
     ["(", "{", "["].includes(x)
       ? stack.push(x)
-      : stack.pop() === map[x]
-        ? (bValue = true)
-        : (bValue = false);
+      : [")", "}", "]"].includes(x)
+        ? stack.pop()
+        : ""
   });
-  return bValue;
+
+  console.log(stack)
+
+  return stack.length === 0;
 }
 
-console.log(balancedBraces("{[()]}"));
+console.log(balancedBraces("{[(xx)]}"));
 
 console.log(balancedBraces("{x[{((((]}"));
 
