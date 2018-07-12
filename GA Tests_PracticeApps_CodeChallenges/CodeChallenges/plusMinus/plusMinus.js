@@ -3,27 +3,30 @@ function plusMinus(arr) {
   arr.forEach(e => {
     e > 0 ? pos.push(e) : e < 0 ? neg.push(e) : zero.push(e);
   });
-  //   console.log(
-  //     (pos.length / arr.length).toFixed(6),
-  //     (neg.length / arr.length).toFixed(6),
-  //     (zero.length / arr.length).toFixed(6)
-  //   );
+  let total = [
+    (pos.length / arr.length).toFixed(6),
+    (neg.length / arr.length).toFixed(6),
+    (zero.length / arr.length).toFixed(6)
+  ];
+  console.log(total[0]);
+  console.log(total[1]);
+  console.log(total[2]);
+}
+
+console.log(plusMinus([-4, 3, -9, 0, 4, 1]));
+
+/*
+
   console.log(
-    typeof parseInt(
+    parseFloat(
       [
         (pos.length / arr.length).toFixed(6),
         (neg.length / arr.length).toFixed(6),
         (zero.length / arr.length).toFixed(6)
       ].join("\n")
-    )
+    ),
+    (pos.length / arr.length).toFixed(6).toString()
   );
-  return parseInt(
-    [
-      (pos.length / arr.length).toFixed(6),
-      (neg.length / arr.length).toFixed(6),
-      (zero.length / arr.length).toFixed(6)
-    ].join("\n")
-  );
-}
 
-console.log(plusMinus([-4, 3, -9, 0, 4, 1]));
+    console.log(typeof total[0]);
+*/
