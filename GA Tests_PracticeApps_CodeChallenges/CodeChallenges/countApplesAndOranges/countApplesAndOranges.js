@@ -1,17 +1,13 @@
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
   let result = { applesR: 0, orangesR: 0 };
-  let house = t - s;
-  let houseToAppleStart = s - a;
-  let houseToAppleEnd = t - a;
-  console.log(house); // 4
-  console.log(houseToAppleStart); //2
-  console.log(houseToAppleEnd); //6
   apples.forEach(apple => {
-    console.log(a + apple + " a + apple");
-    a + apple >= houseToAppleStart && a + apple <= houseToAppleEnd && apple >= 0
-      ? result.applesR++
-      : "";
+    a + apple >= s && a + apple <= t && apple >= 0 ? result.applesR++ : "";
   });
+  oranges.forEach(orange => {
+    b + orange <= t && b + orange >= s && orange <= 0 ? result.orangesR++ : "";
+  });
+  console.log(result.applesR);
+  console.log(result.orangesR);
   return result;
 }
 
